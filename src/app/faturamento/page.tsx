@@ -87,7 +87,7 @@ export default function FaturamentoPage() {
   const totalBilled = invoices.reduce((acc, curr) => acc + curr.total_amount, 0);
 
   return (
-    <div className="p-8 space-y-8 max-w-7xl mx-auto w-full">
+    <div className="p-4 md:p-8 space-y-6 md:space-y-8 max-w-7xl mx-auto w-full">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
