@@ -130,7 +130,7 @@ export default function TorreDeControlePage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
-            Torre de Controle Operacional
+            Monitoramento SLA Entregas
             <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 border border-sky-500/30">
               Tempo Real
             </span>

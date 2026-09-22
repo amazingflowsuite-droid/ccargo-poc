@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Truck, Clock, ShieldCheck, DollarSign, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'CCargo - Torre de Controle & Gestão de Estadias',
+  title: 'CCargo - SLA Entregas & Gestão de Estadias',
   description: 'Sistema de monitoramento em tempo real de tempos de descarga e gestão automatizada de estadias.',
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
               </div>
               <div>
                 <h1 className="font-bold text-lg text-white leading-tight tracking-tight">CCARGO</h1>
-                <p className="text-xs text-sky-400 font-medium">Torre de Estadias</p>
+                <p className="text-xs text-sky-400 font-medium">SLA Entregas</p>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ export default function RootLayout({
                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors"
               >
                 <Clock className="h-4 w-4 text-sky-400" />
-                Torre de Controle (Ao Vivo)
+                Painel de Monitoramento (Ao Vivo)
               </Link>
 
               <Link
@@ -85,7 +85,7 @@ export default function RootLayout({
         <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 flex justify-around p-2 z-50">
           <Link href="/" className="flex flex-col items-center p-2 text-sky-400 hover:text-sky-300">
             <Clock className="h-5 w-5 mb-1" />
-            <span className="text-[10px]">Torre</span>
+            <span className="text-[10px]">Painel</span>
           </Link>
           <Link href="/contratos" className="flex flex-col items-center p-2 text-slate-400 hover:text-slate-200">
             <ShieldCheck className="h-5 w-5 mb-1" />
