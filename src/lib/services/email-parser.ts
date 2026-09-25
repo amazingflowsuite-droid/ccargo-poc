@@ -54,6 +54,11 @@ export async function processUnreadEmails() {
         messageCount++;
         console.log(`Fazendo parse do e-mail UID: ${message.uid}`);
         
+        if (!message.source) {
+          console.warn(`E-mail UID: ${message.uid} não possui conteúdo (source). Pulando...`);
+          continue;
+        }
+
         const parsed = await simpleParser(message.source);
         const htmlContent = parsed.html || parsed.textAsHtml || '';
         const $ = cheerio.load(htmlContent);
