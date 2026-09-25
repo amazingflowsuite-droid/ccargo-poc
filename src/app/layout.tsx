@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
-import { Truck, Clock, ShieldCheck, DollarSign, Building2 } from 'lucide-react';
+import { Truck, Clock, ShieldCheck, DollarSign, Building2, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'CCargo - SLA Entregas & Gestão de Estadias',
@@ -55,6 +55,14 @@ export default function RootLayout({
                 <DollarSign className="h-4 w-4 text-amber-400" />
                 Faturamento de Estadias
               </Link>
+
+              <Link
+                href="/importacoes"
+                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white transition-colors"
+              >
+                <FileText className="h-4 w-4 text-purple-400" />
+                Importações E-mail
+              </Link>
             </nav>
           </div>
 
@@ -94,6 +102,10 @@ export default function RootLayout({
           <Link href="/faturamento" className="flex flex-col items-center p-2 text-slate-400 hover:text-slate-200">
             <DollarSign className="h-5 w-5 mb-1" />
             <span className="text-[10px]">Faturas</span>
+          </Link>
+          <Link href="/importacoes" className="flex flex-col items-center p-2 text-slate-400 hover:text-slate-200">
+            <FileText className="h-5 w-5 mb-1" />
+            <span className="text-[10px]">E-mails</span>
           </Link>
         </nav>
       </body>
